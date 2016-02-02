@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c5b99f3f-b352-4d6f-a519-c9844ed9deed" solutionId="c5b99f3f-b352-4d6f-a519-c9844ed9deed" resetWebServer="true" sharePointProductVersion="15.0" name="ShP.Helper.Testing" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="Zeppelin.ShP.Helper.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\Zeppelin.ShP.Helper\bin\Debug\Zeppelin.ShP.Helper.dll">
+      <safeControls>
+        <safeControl assemblyName="Zeppelin.ShP.Helpe" namespaceName="Zeppelin.ShP.Helpe" typeName="*" isSafeAgainstScript="false" />
+      </safeControls>
+    </customAssembly>
+  </assemblies>
+  <features>
+    <featureReference itemId="54800d85-d461-4ac0-9198-635e42603ce8" />
+    <featureReference itemId="478dd645-8982-40f5-886f-adde7864a667" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="048aecc3-6e8e-4e0c-8443-3b9f590480a1" />
+  </projectItems>
+</package>

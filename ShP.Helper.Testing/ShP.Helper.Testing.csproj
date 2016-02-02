@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43940B11-FCB0-4BE3-964D-9E636DDC416E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShP.Helper.Testing</RootNamespace>
+    <AssemblyName>ShP.Helper.Testing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+    <Reference Include="Zeppelin.ZIA.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=682188e44cdf71c5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\SP2013_ZIA-FWA\Source\Main\Zeppelin.ZIA.Common\bin\Debug\Zeppelin.ZIA.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\Constants.cs" />
+    <Compile Include="Constants\Default.cs" />
+    <Compile Include="Constants\DefaultList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\LibraryItemFields\LibraryItemFields.ascx.cs">
+      <DependentUpon>LibraryItemFields.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\LibraryItemFields\LibraryItemFields.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryItemFields.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ListItemFields\ListItemFields.ascx.cs">
+      <DependentUpon>ListItemFields.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ListItemFields\ListItemFields.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListItemFields.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SendEMail\SendEMail.ascx.cs">
+      <DependentUpon>SendEMail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SendEMail\SendEMail.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SendEMail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\UserInfo\UserInfo.ascx.cs">
+      <DependentUpon>UserInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\UserInfo\UserInfo.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserInfo.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentTypes\CTDefault\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{02ad08c0-9e6d-437f-928c-ae46f0dc8d86}</SharePointProjectItemId>
+    </None>
+    <None Include="Elements\Links\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e0364a97-06a3-41a8-8f21-eeeb3b6ac973}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Lists\Lists.feature">
+      <FeatureId>{478dd645-8982-40f5-886f-adde7864a667}</FeatureId>
+    </None>
+    <None Include="Features\WebParts\WebParts.feature">
+      <FeatureId>{54800d85-d461-4ac0-9198-635e42603ce8}</FeatureId>
+    </None>
+    <None Include="Fields\DefaultFields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81fd4ba2-65ca-4a51-84c4-ee3367013613}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{048aecc3-6e8e-4e0c-8443-3b9f590480a1}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Default2\Default2Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{557c3236-0943-413a-bea3-33bd5dd2eb3e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Default2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b3c73a60-13be-48d9-a641-f91ea4a9a455}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Default\DefaultInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{52fade34-dfb4-4c25-9832-4d5446662265}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Default\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81125275-f6de-491d-9f9b-f177a9221a7c}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{c5b99f3f-b352-4d6f-a519-c9844ed9deed}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebParts\LibraryItemFields\LibraryItemFields.webpart" />
+    <None Include="WebParts\LibraryItemFields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e8c8de2a-17a4-481e-854c-388129f9a232}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\ListItemFields\ListItemFields.webpart" />
+    <None Include="WebParts\ListItemFields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{55c009c9-370e-440a-9721-621e80a2f6cb}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SendEMail\SendEMail.webpart" />
+    <None Include="WebParts\SendEMail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{797cdb62-4b69-46ba-90d6-b615dbeb0d2c}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\UserInfo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{893861a9-247b-4717-8cef-11653af58283}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\UserInfo\UserInfo.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ContentTypes\CTDefault\Elements.xml" />
+    <Content Include="Elements\Links\Elements.xml" />
+    <Content Include="Features\Lists\Lists.Template.xml">
+      <DependentUpon>Lists.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\WebParts\WebParts.Template.xml">
+      <DependentUpon>WebParts.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\DefaultFields\Elements.xml" />
+    <Content Include="Layouts\ShP.Helper.Testing\js\main.js" />
+    <Content Include="Lists\Default2\Default2Instance\Elements.xml" />
+    <Content Include="Lists\Default2\Elements.xml" />
+    <Content Include="Lists\Default2\Schema.xml" />
+    <Content Include="Lists\Default\DefaultInstance\Elements.xml" />
+    <Content Include="Lists\Default\Elements.xml" />
+    <Content Include="Lists\Default\Schema.xml" />
+    <Content Include="WebParts\LibraryItemFields\Elements.xml" />
+    <Content Include="WebParts\LibraryItemFields\LibraryItemFields.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>LibraryItemFields.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\ListItemFields\Elements.xml" />
+    <Content Include="WebParts\ListItemFields\ListItemFields.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ListItemFields.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\SendEMail\Elements.xml" />
+    <Content Include="WebParts\SendEMail\SendEMail.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>SendEMail.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\UserInfo\Elements.xml" />
+    <Content Include="WebParts\UserInfo\UserInfo.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>UserInfo.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zeppelin.ShP.Helper\Zeppelin.ShP.Helper.csproj">
+      <Project>{0a286b4a-e22b-40f2-afaa-83c1e9ca9160}</Project>
+      <Name>Zeppelin.ShP.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

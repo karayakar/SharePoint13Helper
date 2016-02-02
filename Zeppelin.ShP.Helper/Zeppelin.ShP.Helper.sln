@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zeppelin.ShP.Helper", "Zeppelin.ShP.Helper.csproj", "{0A286B4A-E22B-40F2-AFAA-83C1E9CA9160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShP.Helper.Testing", "..\ShP.Helper.Testing\ShP.Helper.Testing.csproj", "{43940B11-FCB0-4BE3-964D-9E636DDC416E}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://zia-sw-mow-tfs01:8080/tfs/zeppelincollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\ShP.Helper.Testing\\ShP.Helper.Testing.csproj
+		SccProjectName1 = ../ShP.Helper.Testing
+		SccLocalPath1 = ..\\ShP.Helper.Testing
+		SccProjectUniqueName2 = Zeppelin.ShP.Helper.csproj
+		SccLocalPath2 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A286B4A-E22B-40F2-AFAA-83C1E9CA9160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A286B4A-E22B-40F2-AFAA-83C1E9CA9160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A286B4A-E22B-40F2-AFAA-83C1E9CA9160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A286B4A-E22B-40F2-AFAA-83C1E9CA9160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43940B11-FCB0-4BE3-964D-9E636DDC416E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43940B11-FCB0-4BE3-964D-9E636DDC416E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43940B11-FCB0-4BE3-964D-9E636DDC416E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{43940B11-FCB0-4BE3-964D-9E636DDC416E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43940B11-FCB0-4BE3-964D-9E636DDC416E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43940B11-FCB0-4BE3-964D-9E636DDC416E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

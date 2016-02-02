@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01003AFD4C8F1D2A4C50BD475C5792165003" Name="CTDefault" Group="Zeppelin.Testing" Description="Zeppelin Testing Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" DisplayName="$Resources:core,Title;" Required="FALSE" ShowInNewForm="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" />
+      <FieldRef ID="{fe3cea99-e789-477d-ba01-e662ac820efb}" DisplayName="Single Line of Text" Required="FALSE" Name="SingleLineOfText" />
+      <FieldRef ID="{8F6C8346-6381-4DE6-89BF-8110181D7CC4}" DisplayName="Number" Required="FALSE" Name="Number" />
+      <FieldRef ID="{AEED7A63-8153-4494-AA84-C75BEB876D78}" DisplayName="Number Decimals" Required="FALSE" Name="NumberDecimals" />
+      <FieldRef ID="{843FE16F-4DAC-4171-B57E-1535A5094B63}" DisplayName="Date Time DateOnly" Required="FALSE" Name="DateTimeDateOnly" Format="DateOnly" />
+      <FieldRef ID="{D80EF779-A769-47D9-B58F-46EF47813016}" DisplayName="Date Time DateTime" Required="FALSE" Name="DateTimeDateTime" Format="DateTime" />
+      <FieldRef ID="{8955A189-574C-4769-8BA2-C6EFAC6555F3}" DisplayName="Date Time TimeOnly" Required="FALSE" Name="DateTimeTimeOnly" Format="TimeOnly" />
+      <FieldRef ID="{1A6E66CE-0A83-44A1-BFEC-4316F3ECAC5D}" DisplayName="Date Time ISO8601" Required="FALSE" Name="DateTimeISO8601" Format="ISO8601" />
+      <FieldRef ID="{4AA774C6-8C09-4E7A-87AE-9E8CEAF2446E}" DisplayName="Date Time MonthYearOnly" Required="FALSE" Name="DateTimeMonthYearOnly" Format="MonthYearOnly" />
+      <FieldRef ID="{B14032DF-2892-4D0F-8F04-ABE768F417E7}" DisplayName="Multiple lines of text" Required="FALSE" Name="MultipleLinesOfText" NumLines="6" />
+      <FieldRef ID="{72424D03-7CE3-4B8B-9123-43063066731B}" DisplayName="Rich Text HTML" Required="FALSE" Name="MultiRichTextHTML" NumLines="6" />
+      <FieldRef ID="{552565B9-41F0-49A9-AAE0-A1FDC23E0AFF}" DisplayName="Publishing HTML" Required="FALSE" Name="PublishingHTML" />
+      <FieldRef ID="{E8326B4D-00FF-4B83-8E1B-3E634C39652C}" DisplayName="Publishing Image" Required="FALSE" Name="PublishingImage" />
+      <FieldRef ID="{F63ABC08-FD67-4419-AD4C-AAB52CCBF795}" DisplayName="HyperLink Image" Required="FALSE" Name="HyperLinkImage" Format="Image" />
+      <FieldRef ID="{DEE0C1DA-3DF2-4DF3-8FD2-0972FBAAEB57}" DisplayName="Boolean" Required="FALSE" Name="Boolean" />
+      <FieldRef ID="{940608DC-FCA4-49EF-8EC2-0445A69A15CD}" DisplayName="CHOICES" Required="FALSE" Name="CHOICES" />
+      <FieldRef ID="{76ADEB21-F19E-4D02-BA63-0ECEA07CF820}" DisplayName="Multi Select" Required="FALSE" Name="MultiSelect" />
+      <FieldRef ID="{7015AE21-8649-4555-9732-DD57468D40C0}" DisplayName="Lookup" Required="FALSE" Name="Lookup" />
+      <FieldRef ID="{331AD053-4BC0-424A-B1E7-2F6379F14D6E}" DisplayName="Lookup Columns" Required="FALSE" Name="LookupColumns" />
+      <FieldRef ID="{AEB58DA3-FAFF-45AC-B442-6F4DE6CF729C}" DisplayName="Multi Lookup Columns" Required="FALSE" Name="MultiLookupColumns" />
+      <FieldRef ID="{C4AC84DF-3734-44F8-AB56-9C872DC9CE40}" DisplayName="Lookup with Additional Field Lookup column" Required="FALSE" Name="LookupWithAdditional" />
+      <FieldRef ID="{361CE844-A0F2-4875-A79E-031C902314F1}" DisplayName="User People Only" Required="FALSE" Name="UserPeopleOnly" />
+      <FieldRef ID="{7FA1C3CA-7E9C-4FCC-BC5E-CC5CD3C21C74}" DisplayName="User People Only Scope" Required="FALSE" Name="UserPeopleOnlyScope" />
+      <!--<FieldRef ID="{D6F07C84-7C2E-4AB0-85E7-CA0A9A423E2E}" DisplayName="User People Only Mult" Required="FALSE" Name="UserPeopleOnlyMult" />-->
+      <FieldRef ID="{B51DD7E7-39B7-4FD0-9897-D7D3E28D429B}" DisplayName="User People And Groups" Required="FALSE" Name="UserPeopleAndGroups" />
+      <!--<FieldRef ID="{7FD054C9-472B-42C7-A607-FAEDB5F7D73D}" DisplayName="User People And Groups Mult" Required="FALSE" Name="UserPeopleAndGroupsMult" />-->
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+     Location="ScriptLink"
+     ScriptSrc="/_layouts/15/Zeppelin/libs/jquery/1.10.1/jquery-ui.min.js" Sequence="101" />
+</Elements>
